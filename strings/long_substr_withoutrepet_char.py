@@ -1,3 +1,4 @@
+
 class Solution(object):
     def lengthOfLongestSubstring(self, s):
         res = set()
@@ -23,3 +24,4 @@ obj = Solution()
 result = obj.lengthOfLongestSubstring(s)
 
 print("Length of longest substring without repeating characters:", result)
+

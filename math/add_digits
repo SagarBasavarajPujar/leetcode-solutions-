@@ -1,0 +1,15 @@
+class Solution(object):
+    def addDigits(self, num):
+        s=0
+        k=0
+        while num>=10:
+            s=0
+            if num<10 and num>0:
+                return num
+            while num!=0:
+                k=num%10
+                s=s+k
+                num=num//10
+            num=s
+            
+        return s

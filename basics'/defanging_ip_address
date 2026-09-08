@@ -1,0 +1,26 @@
+class Solution(object):
+    def getConcatenation(self, nums):
+        res=[0]*(2*len(nums))
+
+        for i in range(len(nums)):
+            res[i]=nums[i]
+            res[i+len(nums)]=res[i]
+        
+
+        return res
+
+#using striing cocatenation
+"""
+class Solution(object):
+    def defangIPaddr(self, address):
+        ans = ""
+
+        for ch in address:
+            if ch == ".":
+                ans += "[.]"
+            else:
+                ans += ch
+
+        return ans
+
+"""

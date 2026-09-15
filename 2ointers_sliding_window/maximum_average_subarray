@@ -1,0 +1,15 @@
+class Solution(object):
+    def findMaxAverage(self, nums, k):
+        """
+        :type nums: List[int]
+        :type k: int
+        :rtype: float
+        """
+        window=sum(nums[:k])
+        max_window=window
+
+        for r in range(k,len(nums)):
+            window+=nums[r]
+            window-=nums[r-k]
+            max_window=max(window,max_window)
+        return max_window/float(k)

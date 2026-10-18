@@ -1,0 +1,15 @@
+class Solution(object):
+    def kidsWithCandies(self, candies, extraCandies):
+        m=max(candies)
+        candyres=list()
+       
+        for i in candies:
+            k=True
+            if(i+extraCandies)>=m:
+                candyres.append(k)
+            else:
+                k=False
+                candyres.append(k)
+        return candyres
+                
+        

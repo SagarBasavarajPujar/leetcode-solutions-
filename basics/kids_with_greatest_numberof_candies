@@ -10,6 +10,4 @@ class Solution(object):
             else:
                 k=False
                 candyres.append(k)
-        return candyres
-                
-        
+        return candyres        

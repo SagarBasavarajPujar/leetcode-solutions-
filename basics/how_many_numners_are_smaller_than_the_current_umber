@@ -8,4 +8,3 @@ class Solution(object):
                     count+=1
             answers.append(count)
         return answers
-
